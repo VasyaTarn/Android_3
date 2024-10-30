@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full name"
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number"
+        android:importantForAutofill="no"
+        app:layout_constraintTop_toBottomOf="@id/editTextName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBarSalary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editTextAge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:max="2000"/>
+
+    <TextView
+        android:id="@+id/textViewSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Salary: 0 USD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekBarSalary" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupQuestion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewSalary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonOption1q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"/>
+        <RadioButton
+            android:id="@+id/radioButtonOption2q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"/>
+        <RadioButton
+            android:id="@+id/radioButtonOption3q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupQuestion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupQuestion1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonOption1q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"/>
+        <RadioButton
+            android:id="@+id/radioButtonOption2q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"/>
+        <RadioButton
+            android:id="@+id/radioButtonOption3q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupQuestion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupQuestion2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonOption1q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"/>
+        <RadioButton
+            android:id="@+id/radioButtonOption2q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"/>
+        <RadioButton
+            android:id="@+id/radioButtonOption3q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupQuestion4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupQuestion3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonOption1q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"/>
+        <RadioButton
+            android:id="@+id/radioButtonOption2q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"/>
+        <RadioButton
+            android:id="@+id/radioButtonOption3q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupQuestion5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupQuestion4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonOption1q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"/>
+        <RadioButton
+            android:id="@+id/radioButtonOption2q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"/>
+        <RadioButton
+            android:id="@+id/radioButtonOption3q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBoxExperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Work experience from 2 years"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupQuestion5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxTeamSkills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team development skills"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxExperience"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTravel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Readiness for business trips"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxTeamSkills"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSubmitTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Take the test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxTravel" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/buttonSubmitTest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
